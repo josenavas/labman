@@ -1,0 +1,21 @@
+{% extends sitebase.html %}
+{% block head %}
+  <script src="/static/js/plateViewer.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var pv = new PlateViewer({{plate_id}}, 'plate-map-div');
+    });
+  </script>
+{% end %}
+
+{%block content %}
+
+<label><h3>Plate '{{plate_name}}' <i>(ID: {{plate_id}})</i></h3></label>
+<!-- Add buttons next to the plate name -->
+<button class='btn btn-default'><span class="glyphicon glyphicon-edit"></span> Change name</button>
+<button class='btn btn-info'><span class="glyphicon glyphicon-save"></span> Save</button>
+<button class='btn btn-success'><span class="glyphicon glyphicon-share"></span> Extract</button>
+<button class='btn btn-danger'><span class="glyphicon glyphicon-trash"></span> Delete</button>
+
+<div id='plate-map-div'></div>
+{% end %}
