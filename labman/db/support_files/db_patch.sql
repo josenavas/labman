@@ -80,7 +80,7 @@ CREATE TABLE qiita.reagent_type (
 COMMENT ON COLUMN qiita.reagent_type.description IS 'Must be unique';
 
 CREATE TABLE qiita.equipment (
-	equipment_id         integer  NOT NULL,
+	equipment_id         bigserial  NOT NULL,
 	external_id          varchar(100)  NOT NULL,
 	equipment_type_id    integer  NOT NULL,
 	notes                varchar(600)  ,
@@ -91,7 +91,7 @@ CREATE TABLE qiita.equipment (
 COMMENT ON COLUMN qiita.equipment.external_id IS 'Must be unique';
 
 CREATE TABLE qiita.plate (
-	plate_id             integer  NOT NULL,
+	plate_id             bigserial  NOT NULL,
 	external_identifier  varchar(250)  NOT NULL,
 	creator_id           integer  NOT NULL,
 	create_date          date  NOT NULL,
@@ -129,7 +129,7 @@ CREATE TABLE qiita.primer_plate_template (
 COMMENT ON TABLE qiita.primer_plate_template IS 'I would prefer to call this a marker gene primer plate template, because it really isn`t referring to a specific physical plate, but rather to a specific plate layout that can be stamped onto infinite working plates';
 
 CREATE TABLE qiita.reagent (
-	reagent_id           integer  NOT NULL,
+	reagent_id           bigserial  NOT NULL,
 	external_lot_id      varchar(100)  NOT NULL,
 	reagent_type_id      integer  NOT NULL,
 	notes                varchar(600)  ,

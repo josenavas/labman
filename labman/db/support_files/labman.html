@@ -242,33 +242,9 @@ table {
 </g>
 
 <g transform='translate(0,110)'>
-<path transform='translate(7,0)' marker-start='url(#foot)' marker-end='url(#arrow)'    d='M 555 165 L 517,165 Q 510,165 510,157 L 510,120' >
-	<title>Foreign Key fk_plate_plate_type
-	plate references plate_type ( plate_type_id )</title>
-</path>
-<path transform='translate(7,0)' marker-start='url(#foot)' marker-end='url(#arrow)'    d='M 555 180 L 547,180 Q 540,180 540,172 L 540,127 Q 540,120 547,120 L 555,120' >
-	<title>Foreign Key fk_plate_plate_configuration
-	plate references plate_configuration ( plate_configuration_id )</title>
-</path>
 <path transform='translate(7,0)' marker-start='url(#foot)' marker-end='url(#arrow)'    d='M 900 180 L 720,180' >
 	<title>Foreign Key fk_well_plate
 	well references plate ( plate_id )</title>
-</path>
-<path transform='translate(7,0)' marker-start='url(#foot)' marker-end='url(#arrow)'    d='M 585 330 L 585,315' >
-	<title>Foreign Key fk_dna_plate_plate
-	gdna_plate references plate ( plate_id )</title>
-</path>
-<path transform='translate(7,0)' marker-start='url(#foot)' marker-end='url(#arrow)'  style='stroke-dasharray:4,2;'  d='M 555 375 L 172,375 Q 165,375 165,367 L 165,360' >
-	<title>Foreign Key fk_dna_plate_equipment_robot
-	gdna_plate references equipment ( extraction_robot_id -> equipment_id )</title>
-</path>
-<path transform='translate(7,0)' marker-start='url(#foot)' marker-end='url(#arrow)'  style='stroke-dasharray:4,2;'  d='M 555 390 L 157,390 Q 150,390 150,382 L 150,360' >
-	<title>Foreign Key fk_dna_plate_equipment_extraction_tool
-	gdna_plate references equipment ( extraction_tool_id -> equipment_id )</title>
-</path>
-<path transform='translate(7,0)' marker-start='url(#foot)' marker-end='url(#arrow)'  style='stroke-dasharray:4,2;'  d='M 555 405 L 322,405 Q 315,405 315,397 L 315,360' >
-	<title>Foreign Key fk_dna_plate_reagent_extraction_kit
-	gdna_plate references reagent ( extraction_kit_id -> reagent_id )</title>
 </path>
 <path transform='translate(7,0)' marker-start='url(#foot)' marker-end='url(#arrow)'    d='M 1050 510 L 1050,262 Q 1050,255 1042,255 L 1005,255' >
 	<title>Foreign Key fk_targeted_primer_well_well
@@ -354,6 +330,30 @@ table {
 	<title>Foreign Key fk_reagent_reagent_type
 	reagent references reagent_type ( reagent_type_id )</title>
 </path>
+<path transform='translate(7,0)' marker-start='url(#foot)' marker-end='url(#arrow)'    d='M 585 330 L 585,315' >
+	<title>Foreign Key fk_dna_plate_plate
+	gdna_plate references plate ( plate_id )</title>
+</path>
+<path transform='translate(7,0)' marker-start='url(#foot)' marker-end='url(#arrow)'  style='stroke-dasharray:4,2;'  d='M 555 375 L 172,375 Q 165,375 165,367 L 165,360' >
+	<title>Foreign Key fk_dna_plate_equipment_robot
+	gdna_plate references equipment ( extraction_robot_id -> equipment_id )</title>
+</path>
+<path transform='translate(7,0)' marker-start='url(#foot)' marker-end='url(#arrow)'  style='stroke-dasharray:4,2;'  d='M 555 390 L 157,390 Q 150,390 150,382 L 150,360' >
+	<title>Foreign Key fk_dna_plate_equipment_extraction_tool
+	gdna_plate references equipment ( extraction_tool_id -> equipment_id )</title>
+</path>
+<path transform='translate(7,0)' marker-start='url(#foot)' marker-end='url(#arrow)'  style='stroke-dasharray:4,2;'  d='M 555 405 L 322,405 Q 315,405 315,397 L 315,360' >
+	<title>Foreign Key fk_dna_plate_reagent_extraction_kit
+	gdna_plate references reagent ( extraction_kit_id -> reagent_id )</title>
+</path>
+<path transform='translate(7,0)' marker-start='url(#foot)' marker-end='url(#arrow)'    d='M 555 165 L 517,165 Q 510,165 510,157 L 510,120' >
+	<title>Foreign Key fk_plate_plate_type
+	plate references plate_type ( plate_type_id )</title>
+</path>
+<path transform='translate(7,0)' marker-start='url(#foot)' marker-end='url(#arrow)'    d='M 555 180 L 547,180 Q 540,180 540,172 L 540,127 Q 540,120 547,120 L 555,120' >
+	<title>Foreign Key fk_plate_plate_configuration
+	plate references plate_configuration ( plate_configuration_id )</title>
+</path>
 <!-- ============= Table 'reagent_type' ============= -->
 <rect class='table' x='225' y='38' width='120' height='75' rx='7' ry='7' />
 <path d='M 225.50 64.50 L 225.50 45.50 Q 225.50 38.50 232.50 38.50 L 337.50 38.50 Q 344.50 38.50 344.50 45.50 L 344.50 64.50 L225.50 64.50 ' style='fill:url(#tableHeaderGradient0); stroke:none;' />
@@ -364,53 +364,6 @@ table {
   <use id='nn' x='227' y='87' xlink:href='#nn'/><a xlink:href='#reagent_type.description'><use id='unq' x='227' y='86' xlink:href='#unq'/><title>Unique Index  ( description ) </title></a>
 <a xlink:href='#reagent_type.description'><text x='243' y='97'>description</text><title>description varchar&#040;100&#041; not null
 Must be unique</title></a>
-
-<!-- ============= Table 'plate_type' ============= -->
-<rect class='table' x='420' y='38' width='105' height='75' rx='7' ry='7' />
-<path d='M 420.50 64.50 L 420.50 45.50 Q 420.50 38.50 427.50 38.50 L 517.50 38.50 Q 524.50 38.50 524.50 45.50 L 524.50 64.50 L420.50 64.50 ' style='fill:url(#tableHeaderGradient0); stroke:none;' />
-<a xlink:href='#plate_type'><text x='445' y='52' class='tableTitle'>plate_type</text><title>Table qiita.plate_type</title></a>
-  <use id='nn' x='422' y='72' xlink:href='#nn'/><a xlink:href='#plate_type.plate_type_id'><use id='pk' x='422' y='71' xlink:href='#pk'/><title>Primary Key  ( plate_type_id ) </title></a>
-<a xlink:href='#plate_type.plate_type_id'><text x='438' y='82'>plate_type_id</text><title>plate_type_id bigserial not null</title></a>
-<a xlink:href='#plate_type.plate_type_id'><use id='ref' x='513' y='71' xlink:href='#ref'/><title>Referred by plate ( plate_type_id ) </title></a>
-  <use id='nn' x='422' y='87' xlink:href='#nn'/><a xlink:href='#plate_type.description'><use id='unq' x='422' y='86' xlink:href='#unq'/><title>Unique Index  ( description ) </title></a>
-<a xlink:href='#plate_type.description'><text x='438' y='97'>description</text><title>description varchar&#040;100&#041; not null
-Must be unique</title></a>
-
-<!-- ============= Table 'plate_configuration' ============= -->
-<rect class='table' x='570' y='38' width='150' height='105' rx='7' ry='7' />
-<path d='M 570.50 64.50 L 570.50 45.50 Q 570.50 38.50 577.50 38.50 L 712.50 38.50 Q 719.50 38.50 719.50 45.50 L 719.50 64.50 L570.50 64.50 ' style='fill:url(#tableHeaderGradient0); stroke:none;' />
-<a xlink:href='#plate_configuration'><text x='592' y='52' class='tableTitle'>plate_configuration</text><title>Table qiita.plate_configuration
-I have named this &quot;plate configuration&quot; instead of &quot;plate size&quot; in case at some point we want to expand it to hold more than just a description &#040;for instance&#044; row letter range&#044; column number range&#044; deep&#045;well vs regular&#044; etc&#044; etc&#041;&#046;</title></a>
-  <use id='nn' x='572' y='72' xlink:href='#nn'/><a xlink:href='#plate_configuration.plate_configuration_id'><use id='pk' x='572' y='71' xlink:href='#pk'/><title>Primary Key  ( plate_configuration_id ) </title></a>
-<a xlink:href='#plate_configuration.plate_configuration_id'><text x='588' y='82'>plate_configuration_id</text><title>plate_configuration_id bigserial not null</title></a>
-<a xlink:href='#plate_configuration.plate_configuration_id'><use id='ref' x='708' y='71' xlink:href='#ref'/><title>Referred by plate ( plate_configuration_id ) </title></a>
-  <use id='nn' x='572' y='87' xlink:href='#nn'/><a xlink:href='#plate_configuration.description'><use id='unq' x='572' y='86' xlink:href='#unq'/><title>Unique Index  ( description ) </title></a>
-<a xlink:href='#plate_configuration.description'><text x='588' y='97'>description</text><title>description varchar&#040;100&#041; not null
-Must be unique</title></a>
-  <use id='nn' x='572' y='102' xlink:href='#nn'/><a xlink:href='#plate_configuration.num_rows'><text x='588' y='112'>num_rows</text><title>num_rows integer not null</title></a>
-  <use id='nn' x='572' y='117' xlink:href='#nn'/><a xlink:href='#plate_configuration.num_columns'><text x='588' y='127'>num_columns</text><title>num_columns integer not null</title></a>
-
-<!-- ============= Table 'plate' ============= -->
-<rect class='table' x='570' y='158' width='150' height='150' rx='7' ry='7' />
-<path d='M 570.50 184.50 L 570.50 165.50 Q 570.50 158.50 577.50 158.50 L 712.50 158.50 Q 719.50 158.50 719.50 165.50 L 719.50 184.50 L570.50 184.50 ' style='fill:url(#tableHeaderGradient0); stroke:none;' />
-<a xlink:href='#plate'><text x='632' y='172' class='tableTitle'>plate</text><title>Table qiita.plate</title></a>
-  <use id='nn' x='572' y='192' xlink:href='#nn'/><a xlink:href='#plate.plate_id'><use id='pk' x='572' y='191' xlink:href='#pk'/><title>Primary Key  ( plate_id ) </title></a>
-<a xlink:href='#plate.plate_id'><text x='588' y='202'>plate_id</text><title>plate_id integer not null</title></a>
-<a xlink:href='#plate.plate_id'><use id='ref' x='708' y='191' xlink:href='#ref'/><title>Referred by combined_pcr_plate ( plate_id ) 
-Referred by gdna_plate ( plate_id ) 
-Referred by primer_plate_template ( plate_id ) 
-Referred by well ( plate_id ) </title></a>
-  <use id='nn' x='572' y='207' xlink:href='#nn'/><a xlink:href='#plate.external_identifier'><use id='unq' x='572' y='206' xlink:href='#unq'/><title>Unique Index  ( external_identifier ) </title></a>
-<a xlink:href='#plate.external_identifier'><text x='588' y='217'>external_identifier</text><title>external_identifier varchar&#040;250&#041; not null
-Must be unique</title></a>
-  <use id='nn' x='572' y='222' xlink:href='#nn'/><a xlink:href='#plate.creator_id'><text x='588' y='232'>creator_id</text><title>creator_id integer not null
-This should probably be a foreign key to a user&#095;id somewhere else in the db</title></a>
-  <use id='nn' x='572' y='237' xlink:href='#nn'/><a xlink:href='#plate.create_date'><text x='588' y='247'>create_date</text><title>create_date date not null</title></a>
-  <use id='nn' x='572' y='252' xlink:href='#nn'/><a xlink:href='#plate.plate_type_id'><text x='588' y='262'>plate_type_id</text><title>plate_type_id integer not null</title></a>
-<a xlink:href='#plate.plate_type_id'><use id='fk' x='708' y='251' xlink:href='#fk'/><title>References plate_type ( plate_type_id ) </title></a>
-  <use id='nn' x='572' y='267' xlink:href='#nn'/><a xlink:href='#plate.plate_configuration_id'><text x='588' y='277'>plate_configuration_id</text><title>plate_configuration_id integer not null</title></a>
-<a xlink:href='#plate.plate_configuration_id'><use id='fk' x='708' y='266' xlink:href='#fk'/><title>References plate_configuration ( plate_configuration_id ) </title></a>
-  <a xlink:href='#plate.notes'><text x='588' y='292'>notes</text><title>notes varchar&#040;600&#041;</title></a>
 
 <!-- ============= Table 'well' ============= -->
 <rect class='table' x='915' y='143' width='90' height='120' rx='7' ry='7' />
@@ -426,28 +379,6 @@ Referred by primer_plate_template_well ( well_id ) </title></a>
   <use id='nn' x='917' y='207' xlink:href='#nn'/><a xlink:href='#well.row_num'><text x='933' y='217'>row_num</text><title>row_num integer not null</title></a>
   <use id='nn' x='917' y='222' xlink:href='#nn'/><a xlink:href='#well.col_num'><text x='933' y='232'>col_num</text><title>col_num integer not null</title></a>
   <a xlink:href='#well.notes'><text x='933' y='247'>notes</text><title>notes varchar&#040;600&#041;</title></a>
-
-<!-- ============= Table 'gdna_plate' ============= -->
-<rect class='table' x='570' y='338' width='150' height='120' rx='7' ry='7' />
-<path d='M 570.50 364.50 L 570.50 345.50 Q 570.50 338.50 577.50 338.50 L 712.50 338.50 Q 719.50 338.50 719.50 345.50 L 719.50 364.50 L570.50 364.50 ' style='fill:url(#tableHeaderGradient0); stroke:none;' />
-<a xlink:href='#gdna_plate'><text x='615' y='352' class='tableTitle'>gdna_plate</text><title>Table qiita.gdna_plate</title></a>
-  <use id='nn' x='572' y='372' xlink:href='#nn'/><a xlink:href='#gdna_plate.gdna_plate_id'><use id='pk' x='572' y='371' xlink:href='#pk'/><title>Primary Key  ( gdna_plate_id ) </title></a>
-<a xlink:href='#gdna_plate.gdna_plate_id'><text x='588' y='382'>gdna_plate_id</text><title>gdna_plate_id bigserial not null</title></a>
-<a xlink:href='#gdna_plate.gdna_plate_id'><use id='ref' x='708' y='371' xlink:href='#ref'/><title>Referred by combined_pcr_plate ( gdna_plate_id ) </title></a>
-  <use id='nn' x='572' y='387' xlink:href='#nn'/><a xlink:href='#gdna_plate.plate_id'><text x='588' y='397'>plate_id</text><title>plate_id integer not null</title></a>
-<a xlink:href='#gdna_plate.plate_id'><use id='fk' x='708' y='386' xlink:href='#fk'/><title>References plate ( plate_id ) </title></a>
-  <a xlink:href='#gdna_plate.extraction_robot_id'><text x='588' y='412'>extraction_robot_id</text><title>extraction_robot_id integer
-Not null because gdna plate record will be created &#042;before&#042; extraction&#046;
-Enforce correct type of equipment id with trigger&#046;</title></a>
-<a xlink:href='#gdna_plate.extraction_robot_id'><use id='fk' x='708' y='401' xlink:href='#fk'/><title>References equipment ( extraction_robot_id -> equipment_id ) </title></a>
-  <a xlink:href='#gdna_plate.extraction_kit_id'><text x='588' y='427'>extraction_kit_id</text><title>extraction_kit_id integer
-Not null because gdna plate record will be created &#042;before&#042; extraction&#046;
-Enforce correct type of reagent id with trigger&#046;</title></a>
-<a xlink:href='#gdna_plate.extraction_kit_id'><use id='fk' x='708' y='416' xlink:href='#fk'/><title>References reagent ( extraction_kit_id -> reagent_id ) </title></a>
-  <a xlink:href='#gdna_plate.extraction_tool_id'><text x='588' y='442'>extraction_tool_id</text><title>extraction_tool_id integer
-Not null because gdna plate record will be created &#042;before&#042; extraction&#046;
-Enforce correct type of equipment id with trigger&#046;</title></a>
-<a xlink:href='#gdna_plate.extraction_tool_id'><use id='fk' x='708' y='431' xlink:href='#fk'/><title>References equipment ( extraction_tool_id -> equipment_id ) </title></a>
 
 <!-- ============= Table 'gdna_content_type' ============= -->
 <rect class='table' x='1155' y='338' width='150' height='75' rx='7' ry='7' />
@@ -600,17 +531,6 @@ May not be null&#044;so add trigger to set to same as total&#095;volume when rec
 Use trigger to ensure that this is calculated if percentage is set&#063;</title></a>
   <use id='nn' x='92' y='1272' xlink:href='#nn'/><a xlink:href='#sequencing_pool_components.percentage'><text x='108' y='1282'>percentage</text><title>percentage float8 not null</title></a>
 
-<!-- ============= Table 'equipment_type' ============= -->
-<rect class='table' x='60' y='38' width='135' height='75' rx='7' ry='7' />
-<path d='M 60.50 64.50 L 60.50 45.50 Q 60.50 38.50 67.50 38.50 L 187.50 38.50 Q 194.50 38.50 194.50 45.50 L 194.50 64.50 L60.50 64.50 ' style='fill:url(#tableHeaderGradient0); stroke:none;' />
-<a xlink:href='#equipment_type'><text x='84' y='52' class='tableTitle'>equipment_type</text><title>Table qiita.equipment_type</title></a>
-  <use id='nn' x='62' y='72' xlink:href='#nn'/><a xlink:href='#equipment_type.equipment_type_id'><use id='pk' x='62' y='71' xlink:href='#pk'/><title>Primary Key  ( equipment_type_id ) </title></a>
-<a xlink:href='#equipment_type.equipment_type_id'><text x='78' y='82'>equipment_type_id</text><title>equipment_type_id bigserial not null</title></a>
-<a xlink:href='#equipment_type.equipment_type_id'><use id='ref' x='183' y='71' xlink:href='#ref'/><title>Referred by equipment ( equipment_type_id ) </title></a>
-  <use id='nn' x='62' y='87' xlink:href='#nn'/><a xlink:href='#equipment_type.description'><use id='unq' x='62' y='86' xlink:href='#unq'/><title>Unique Index  ( description ) </title></a>
-<a xlink:href='#equipment_type.description'><text x='78' y='97'>description</text><title>description varchar&#040;100&#041; not null
-Must be unique</title></a>
-
 <!-- ============= Table 'gdna_well' ============= -->
 <rect class='table' x='915' y='338' width='120' height='105' rx='7' ry='7' />
 <path d='M 915.50 364.50 L 915.50 345.50 Q 915.50 338.50 922.50 338.50 L 1027.50 338.50 Q 1034.50 338.50 1034.50 345.50 L 1034.50 364.50 L915.50 364.50 ' style='fill:url(#tableHeaderGradient0); stroke:none;' />
@@ -629,7 +549,7 @@ Trigger should enforce&#044; per&#045;record&#044; whether this is allowed to be
 <path d='M 45.50 274.50 L 45.50 255.50 Q 45.50 248.50 52.50 248.50 L 172.50 248.50 Q 179.50 248.50 179.50 255.50 L 179.50 274.50 L45.50 274.50 ' style='fill:url(#tableHeaderGradient0); stroke:none;' />
 <a xlink:href='#equipment'><text x='84' y='262' class='tableTitle'>equipment</text><title>Table qiita.equipment</title></a>
   <use id='nn' x='47' y='282' xlink:href='#nn'/><a xlink:href='#equipment.equipment_id'><use id='pk' x='47' y='281' xlink:href='#pk'/><title>Primary Key  ( equipment_id ) </title></a>
-<a xlink:href='#equipment.equipment_id'><text x='63' y='292'>equipment_id</text><title>equipment_id integer not null</title></a>
+<a xlink:href='#equipment.equipment_id'><text x='63' y='292'>equipment_id</text><title>equipment_id bigserial not null</title></a>
 <a xlink:href='#equipment.equipment_id'><use id='ref' x='168' y='281' xlink:href='#ref'/><title>Referred by combined_pcr_plate ( tm50_8_tool_id -> equipment_id ) 
 Referred by combined_pcr_plate ( processing_robot_id -> equipment_id ) 
 Referred by combined_pcr_plate ( tm300_8_tool_id -> equipment_id ) 
@@ -647,7 +567,7 @@ Must be unique</title></a>
 <path d='M 210.50 274.50 L 210.50 255.50 Q 210.50 248.50 217.50 248.50 L 322.50 248.50 Q 329.50 248.50 329.50 255.50 L 329.50 274.50 L210.50 274.50 ' style='fill:url(#tableHeaderGradient0); stroke:none;' />
 <a xlink:href='#reagent'><text x='249' y='262' class='tableTitle'>reagent</text><title>Table qiita.reagent</title></a>
   <use id='nn' x='212' y='282' xlink:href='#nn'/><a xlink:href='#reagent.reagent_id'><use id='pk' x='212' y='281' xlink:href='#pk'/><title>Primary Key  ( reagent_id ) </title></a>
-<a xlink:href='#reagent.reagent_id'><text x='228' y='292'>reagent_id</text><title>reagent_id integer not null</title></a>
+<a xlink:href='#reagent.reagent_id'><text x='228' y='292'>reagent_id</text><title>reagent_id bigserial not null</title></a>
 <a xlink:href='#reagent.reagent_id'><use id='ref' x='318' y='281' xlink:href='#ref'/><title>Referred by combined_pcr_plate ( water_id -> reagent_id ) 
 Referred by combined_pcr_plate ( master_mix_id -> reagent_id ) 
 Referred by gdna_plate ( extraction_kit_id -> reagent_id ) </title></a>
@@ -657,6 +577,86 @@ Must be unique</title></a>
   <use id='nn' x='212' y='312' xlink:href='#nn'/><a xlink:href='#reagent.reagent_type_id'><text x='228' y='322'>reagent_type_id</text><title>reagent_type_id integer not null</title></a>
 <a xlink:href='#reagent.reagent_type_id'><use id='fk' x='318' y='311' xlink:href='#fk'/><title>References reagent_type ( reagent_type_id ) </title></a>
   <a xlink:href='#reagent.notes'><text x='228' y='337'>notes</text><title>notes varchar&#040;600&#041;</title></a>
+
+<!-- ============= Table 'equipment_type' ============= -->
+<rect class='table' x='60' y='38' width='135' height='75' rx='7' ry='7' />
+<path d='M 60.50 64.50 L 60.50 45.50 Q 60.50 38.50 67.50 38.50 L 187.50 38.50 Q 194.50 38.50 194.50 45.50 L 194.50 64.50 L60.50 64.50 ' style='fill:url(#tableHeaderGradient0); stroke:none;' />
+<a xlink:href='#equipment_type'><text x='84' y='52' class='tableTitle'>equipment_type</text><title>Table qiita.equipment_type</title></a>
+  <use id='nn' x='62' y='72' xlink:href='#nn'/><a xlink:href='#equipment_type.equipment_type_id'><use id='pk' x='62' y='71' xlink:href='#pk'/><title>Primary Key  ( equipment_type_id ) </title></a>
+<a xlink:href='#equipment_type.equipment_type_id'><text x='78' y='82'>equipment_type_id</text><title>equipment_type_id bigserial not null</title></a>
+<a xlink:href='#equipment_type.equipment_type_id'><use id='ref' x='183' y='71' xlink:href='#ref'/><title>Referred by equipment ( equipment_type_id ) </title></a>
+  <use id='nn' x='62' y='87' xlink:href='#nn'/><a xlink:href='#equipment_type.description'><use id='unq' x='62' y='86' xlink:href='#unq'/><title>Unique Index  ( description ) </title></a>
+<a xlink:href='#equipment_type.description'><text x='78' y='97'>description</text><title>description varchar&#040;100&#041; not null
+Must be unique</title></a>
+
+<!-- ============= Table 'gdna_plate' ============= -->
+<rect class='table' x='570' y='338' width='150' height='120' rx='7' ry='7' />
+<path d='M 570.50 364.50 L 570.50 345.50 Q 570.50 338.50 577.50 338.50 L 712.50 338.50 Q 719.50 338.50 719.50 345.50 L 719.50 364.50 L570.50 364.50 ' style='fill:url(#tableHeaderGradient0); stroke:none;' />
+<a xlink:href='#gdna_plate'><text x='615' y='352' class='tableTitle'>gdna_plate</text><title>Table qiita.gdna_plate</title></a>
+  <use id='nn' x='572' y='372' xlink:href='#nn'/><a xlink:href='#gdna_plate.gdna_plate_id'><use id='pk' x='572' y='371' xlink:href='#pk'/><title>Primary Key  ( gdna_plate_id ) </title></a>
+<a xlink:href='#gdna_plate.gdna_plate_id'><text x='588' y='382'>gdna_plate_id</text><title>gdna_plate_id bigserial not null</title></a>
+<a xlink:href='#gdna_plate.gdna_plate_id'><use id='ref' x='708' y='371' xlink:href='#ref'/><title>Referred by combined_pcr_plate ( gdna_plate_id ) </title></a>
+  <use id='nn' x='572' y='387' xlink:href='#nn'/><a xlink:href='#gdna_plate.plate_id'><text x='588' y='397'>plate_id</text><title>plate_id integer not null</title></a>
+<a xlink:href='#gdna_plate.plate_id'><use id='fk' x='708' y='386' xlink:href='#fk'/><title>References plate ( plate_id ) </title></a>
+  <a xlink:href='#gdna_plate.extraction_robot_id'><text x='588' y='412'>extraction_robot_id</text><title>extraction_robot_id integer
+Not null because gdna plate record will be created &#042;before&#042; extraction&#046;
+Enforce correct type of equipment id with trigger&#046;</title></a>
+<a xlink:href='#gdna_plate.extraction_robot_id'><use id='fk' x='708' y='401' xlink:href='#fk'/><title>References equipment ( extraction_robot_id -> equipment_id ) </title></a>
+  <a xlink:href='#gdna_plate.extraction_kit_id'><text x='588' y='427'>extraction_kit_id</text><title>extraction_kit_id integer
+Not null because gdna plate record will be created &#042;before&#042; extraction&#046;
+Enforce correct type of reagent id with trigger&#046;</title></a>
+<a xlink:href='#gdna_plate.extraction_kit_id'><use id='fk' x='708' y='416' xlink:href='#fk'/><title>References reagent ( extraction_kit_id -> reagent_id ) </title></a>
+  <a xlink:href='#gdna_plate.extraction_tool_id'><text x='588' y='442'>extraction_tool_id</text><title>extraction_tool_id integer
+Not null because gdna plate record will be created &#042;before&#042; extraction&#046;
+Enforce correct type of equipment id with trigger&#046;</title></a>
+<a xlink:href='#gdna_plate.extraction_tool_id'><use id='fk' x='708' y='431' xlink:href='#fk'/><title>References equipment ( extraction_tool_id -> equipment_id ) </title></a>
+
+<!-- ============= Table 'plate' ============= -->
+<rect class='table' x='570' y='158' width='150' height='150' rx='7' ry='7' />
+<path d='M 570.50 184.50 L 570.50 165.50 Q 570.50 158.50 577.50 158.50 L 712.50 158.50 Q 719.50 158.50 719.50 165.50 L 719.50 184.50 L570.50 184.50 ' style='fill:url(#tableHeaderGradient0); stroke:none;' />
+<a xlink:href='#plate'><text x='632' y='172' class='tableTitle'>plate</text><title>Table qiita.plate</title></a>
+  <use id='nn' x='572' y='192' xlink:href='#nn'/><a xlink:href='#plate.plate_id'><use id='pk' x='572' y='191' xlink:href='#pk'/><title>Primary Key  ( plate_id ) </title></a>
+<a xlink:href='#plate.plate_id'><text x='588' y='202'>plate_id</text><title>plate_id bigserial not null</title></a>
+<a xlink:href='#plate.plate_id'><use id='ref' x='708' y='191' xlink:href='#ref'/><title>Referred by combined_pcr_plate ( plate_id ) 
+Referred by gdna_plate ( plate_id ) 
+Referred by primer_plate_template ( plate_id ) 
+Referred by well ( plate_id ) </title></a>
+  <use id='nn' x='572' y='207' xlink:href='#nn'/><a xlink:href='#plate.external_identifier'><use id='unq' x='572' y='206' xlink:href='#unq'/><title>Unique Index  ( external_identifier ) </title></a>
+<a xlink:href='#plate.external_identifier'><text x='588' y='217'>external_identifier</text><title>external_identifier varchar&#040;250&#041; not null
+Must be unique</title></a>
+  <use id='nn' x='572' y='222' xlink:href='#nn'/><a xlink:href='#plate.creator_id'><text x='588' y='232'>creator_id</text><title>creator_id integer not null
+This should probably be a foreign key to a user&#095;id somewhere else in the db</title></a>
+  <use id='nn' x='572' y='237' xlink:href='#nn'/><a xlink:href='#plate.create_date'><text x='588' y='247'>create_date</text><title>create_date date not null</title></a>
+  <use id='nn' x='572' y='252' xlink:href='#nn'/><a xlink:href='#plate.plate_type_id'><text x='588' y='262'>plate_type_id</text><title>plate_type_id integer not null</title></a>
+<a xlink:href='#plate.plate_type_id'><use id='fk' x='708' y='251' xlink:href='#fk'/><title>References plate_type ( plate_type_id ) </title></a>
+  <use id='nn' x='572' y='267' xlink:href='#nn'/><a xlink:href='#plate.plate_configuration_id'><text x='588' y='277'>plate_configuration_id</text><title>plate_configuration_id integer not null</title></a>
+<a xlink:href='#plate.plate_configuration_id'><use id='fk' x='708' y='266' xlink:href='#fk'/><title>References plate_configuration ( plate_configuration_id ) </title></a>
+  <a xlink:href='#plate.notes'><text x='588' y='292'>notes</text><title>notes varchar&#040;600&#041;</title></a>
+
+<!-- ============= Table 'plate_configuration' ============= -->
+<rect class='table' x='570' y='38' width='150' height='105' rx='7' ry='7' />
+<path d='M 570.50 64.50 L 570.50 45.50 Q 570.50 38.50 577.50 38.50 L 712.50 38.50 Q 719.50 38.50 719.50 45.50 L 719.50 64.50 L570.50 64.50 ' style='fill:url(#tableHeaderGradient0); stroke:none;' />
+<a xlink:href='#plate_configuration'><text x='592' y='52' class='tableTitle'>plate_configuration</text><title>Table qiita.plate_configuration
+I have named this &quot;plate configuration&quot; instead of &quot;plate size&quot; in case at some point we want to expand it to hold more than just a description &#040;for instance&#044; row letter range&#044; column number range&#044; deep&#045;well vs regular&#044; etc&#044; etc&#041;&#046;</title></a>
+  <use id='nn' x='572' y='72' xlink:href='#nn'/><a xlink:href='#plate_configuration.plate_configuration_id'><use id='pk' x='572' y='71' xlink:href='#pk'/><title>Primary Key  ( plate_configuration_id ) </title></a>
+<a xlink:href='#plate_configuration.plate_configuration_id'><text x='588' y='82'>plate_configuration_id</text><title>plate_configuration_id bigserial not null</title></a>
+<a xlink:href='#plate_configuration.plate_configuration_id'><use id='ref' x='708' y='71' xlink:href='#ref'/><title>Referred by plate ( plate_configuration_id ) </title></a>
+  <use id='nn' x='572' y='87' xlink:href='#nn'/><a xlink:href='#plate_configuration.description'><use id='unq' x='572' y='86' xlink:href='#unq'/><title>Unique Index  ( description ) </title></a>
+<a xlink:href='#plate_configuration.description'><text x='588' y='97'>description</text><title>description varchar&#040;100&#041; not null
+Must be unique</title></a>
+  <use id='nn' x='572' y='102' xlink:href='#nn'/><a xlink:href='#plate_configuration.num_rows'><text x='588' y='112'>num_rows</text><title>num_rows integer not null</title></a>
+  <use id='nn' x='572' y='117' xlink:href='#nn'/><a xlink:href='#plate_configuration.num_columns'><text x='588' y='127'>num_columns</text><title>num_columns integer not null</title></a>
+
+<!-- ============= Table 'plate_type' ============= -->
+<rect class='table' x='420' y='38' width='105' height='75' rx='7' ry='7' />
+<path d='M 420.50 64.50 L 420.50 45.50 Q 420.50 38.50 427.50 38.50 L 517.50 38.50 Q 524.50 38.50 524.50 45.50 L 524.50 64.50 L420.50 64.50 ' style='fill:url(#tableHeaderGradient0); stroke:none;' />
+<a xlink:href='#plate_type'><text x='445' y='52' class='tableTitle'>plate_type</text><title>Table qiita.plate_type</title></a>
+  <use id='nn' x='422' y='72' xlink:href='#nn'/><a xlink:href='#plate_type.plate_type_id'><use id='pk' x='422' y='71' xlink:href='#pk'/><title>Primary Key  ( plate_type_id ) </title></a>
+<a xlink:href='#plate_type.plate_type_id'><text x='438' y='82'>plate_type_id</text><title>plate_type_id bigserial not null</title></a>
+<a xlink:href='#plate_type.plate_type_id'><use id='ref' x='513' y='71' xlink:href='#ref'/><title>Referred by plate ( plate_type_id ) </title></a>
+  <use id='nn' x='422' y='87' xlink:href='#nn'/><a xlink:href='#plate_type.description'><use id='unq' x='422' y='86' xlink:href='#unq'/><title>Unique Index  ( description ) </title></a>
+<a xlink:href='#plate_type.description'><text x='438' y='97'>description</text><title>description varchar&#040;100&#041; not null
+Must be unique</title></a>
 
 </g></svg>
 
@@ -683,137 +683,6 @@ Must be unique</title></a>
 	</tr>
 	<tr>		<td>idx&#095;reagent&#095;type unique</td>
 		<td> ON description</td>
-		<td>  </td>
-	</tr>
-</tbody>
-</table>
-
-<br/><br/>
-<table class='bordered'>
-<thead>
-<tr><th colspan='3'><a name='plate_type'>Table plate_type</a></th></tr>
-</thead>
-<tbody>
-	<tr>
-		<td><a name='plate_type.plate_type_id'>plate&#095;type&#095;id</a></td>
-		<td> bigserial  NOT NULL  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td><a name='plate_type.description'>description</a></td>
-		<td> varchar&#040; 100 &#041;  NOT NULL  </td>
-		<td> Must be unique </td>
-	</tr>
-<tr><th colspan='3'><b>Indexes</b></th></tr>
-	<tr>		<td>pk&#095;plate&#095;type primary key</td>
-		<td> ON plate&#095;type&#095;id</td>
-		<td>  </td>
-	</tr>
-	<tr>		<td>idx&#095;plate&#095;type unique</td>
-		<td> ON description</td>
-		<td>  </td>
-	</tr>
-</tbody>
-</table>
-
-<br/><br/>
-<table class='bordered'>
-<thead>
-<tr><th colspan='3'><a name='plate_configuration'>Table plate_configuration</a></th></tr>
-<tr><td colspan='3'>I have named this &quot;plate configuration&quot; instead of &quot;plate size&quot; in case at some point we want to expand it to hold more than just a description &#040;for instance&#044; row letter range&#044; column number range&#044; deep&#045;well vs regular&#044; etc&#044; etc&#041;&#046; </td></tr>
-</thead>
-<tbody>
-	<tr>
-		<td><a name='plate_configuration.plate_configuration_id'>plate&#095;configuration&#095;id</a></td>
-		<td> bigserial  NOT NULL  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td><a name='plate_configuration.description'>description</a></td>
-		<td> varchar&#040; 100 &#041;  NOT NULL  </td>
-		<td> Must be unique </td>
-	</tr>
-	<tr>
-		<td><a name='plate_configuration.num_rows'>num&#095;rows</a></td>
-		<td> integer  NOT NULL  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td><a name='plate_configuration.num_columns'>num&#095;columns</a></td>
-		<td> integer  NOT NULL  </td>
-		<td>  </td>
-	</tr>
-<tr><th colspan='3'><b>Indexes</b></th></tr>
-	<tr>		<td>pk&#095;plate&#095;size primary key</td>
-		<td> ON plate&#095;configuration&#095;id</td>
-		<td>  </td>
-	</tr>
-	<tr>		<td>idx&#095;plate&#095;configuration unique</td>
-		<td> ON description</td>
-		<td>  </td>
-	</tr>
-</tbody>
-</table>
-
-<br/><br/>
-<table class='bordered'>
-<thead>
-<tr><th colspan='3'><a name='plate'>Table plate</a></th></tr>
-</thead>
-<tbody>
-	<tr>
-		<td><a name='plate.plate_id'>plate&#095;id</a></td>
-		<td> integer  NOT NULL  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td><a name='plate.external_identifier'>external&#095;identifier</a></td>
-		<td> varchar&#040; 250 &#041;  NOT NULL  </td>
-		<td> Must be unique </td>
-	</tr>
-	<tr>
-		<td><a name='plate.creator_id'>creator&#095;id</a></td>
-		<td> integer  NOT NULL  </td>
-		<td> This should probably be a foreign key to a user&#095;id somewhere else in the db </td>
-	</tr>
-	<tr>
-		<td><a name='plate.create_date'>create&#095;date</a></td>
-		<td> date  NOT NULL  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td><a name='plate.plate_type_id'>plate&#095;type&#095;id</a></td>
-		<td> integer  NOT NULL  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td><a name='plate.plate_configuration_id'>plate&#095;configuration&#095;id</a></td>
-		<td> integer  NOT NULL  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td><a name='plate.notes'>notes</a></td>
-		<td> varchar&#040; 600 &#041;   </td>
-		<td>  </td>
-	</tr>
-<tr><th colspan='3'><b>Indexes</b></th></tr>
-	<tr>		<td>pk&#095;plate primary key</td>
-		<td> ON plate&#095;id</td>
-		<td>  </td>
-	</tr>
-	<tr>		<td>idx&#095;plate unique</td>
-		<td> ON external&#095;identifier</td>
-		<td>  </td>
-	</tr>
-<tr><th colspan='3'><b>Foreign Keys</b></th></tr>
-	<tr>
-		<td>fk_plate_plate_type</td>
-		<td > ( plate&#095;type&#095;id ) ref <a href='#plate&#095;type'>plate&#095;type</a> (plate&#095;type&#095;id) </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td>fk_plate_plate_configuration</td>
-		<td > ( plate&#095;configuration&#095;id ) ref <a href='#plate&#095;configuration'>plate&#095;configuration</a> (plate&#095;configuration&#095;id) </td>
 		<td>  </td>
 	</tr>
 </tbody>
@@ -859,69 +728,6 @@ Must be unique</title></a>
 	<tr>
 		<td>fk_well_plate</td>
 		<td > ( plate&#095;id ) ref <a href='#plate'>plate</a> (plate&#095;id) </td>
-		<td>  </td>
-	</tr>
-</tbody>
-</table>
-
-<br/><br/>
-<table class='bordered'>
-<thead>
-<tr><th colspan='3'><a name='gdna_plate'>Table gdna_plate</a></th></tr>
-</thead>
-<tbody>
-	<tr>
-		<td><a name='gdna_plate.gdna_plate_id'>gdna&#095;plate&#095;id</a></td>
-		<td> bigserial  NOT NULL  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td><a name='gdna_plate.plate_id'>plate&#095;id</a></td>
-		<td> integer  NOT NULL  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td><a name='gdna_plate.extraction_robot_id'>extraction&#095;robot&#095;id</a></td>
-		<td> integer   </td>
-		<td> Not null because gdna plate record will be created &#042;before&#042; extraction&#046;
-Enforce correct type of equipment id with trigger&#046; </td>
-	</tr>
-	<tr>
-		<td><a name='gdna_plate.extraction_kit_id'>extraction&#095;kit&#095;id</a></td>
-		<td> integer   </td>
-		<td> Not null because gdna plate record will be created &#042;before&#042; extraction&#046;
-Enforce correct type of reagent id with trigger&#046; </td>
-	</tr>
-	<tr>
-		<td><a name='gdna_plate.extraction_tool_id'>extraction&#095;tool&#095;id</a></td>
-		<td> integer   </td>
-		<td> Not null because gdna plate record will be created &#042;before&#042; extraction&#046;
-Enforce correct type of equipment id with trigger&#046; </td>
-	</tr>
-<tr><th colspan='3'><b>Indexes</b></th></tr>
-	<tr>		<td>pk&#095;dna&#095;plate primary key</td>
-		<td> ON gdna&#095;plate&#095;id</td>
-		<td>  </td>
-	</tr>
-<tr><th colspan='3'><b>Foreign Keys</b></th></tr>
-	<tr>
-		<td>fk_dna_plate_plate</td>
-		<td > ( plate&#095;id ) ref <a href='#plate'>plate</a> (plate&#095;id) </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td>fk_dna_plate_equipment_robot</td>
-		<td > ( extraction&#095;robot&#095;id ) ref <a href='#equipment'>equipment</a> (equipment&#095;id) </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td>fk_dna_plate_equipment_extraction_tool</td>
-		<td > ( extraction&#095;tool&#095;id ) ref <a href='#equipment'>equipment</a> (equipment&#095;id) </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td>fk_dna_plate_reagent_extraction_kit</td>
-		<td > ( extraction&#095;kit&#095;id ) ref <a href='#reagent'>reagent</a> (reagent&#095;id) </td>
 		<td>  </td>
 	</tr>
 </tbody>
@@ -1390,34 +1196,6 @@ Again&#044; if only limited choices available&#044; could make a foreign key to 
 <br/><br/>
 <table class='bordered'>
 <thead>
-<tr><th colspan='3'><a name='equipment_type'>Table equipment_type</a></th></tr>
-</thead>
-<tbody>
-	<tr>
-		<td><a name='equipment_type.equipment_type_id'>equipment&#095;type&#095;id</a></td>
-		<td> bigserial  NOT NULL  </td>
-		<td>  </td>
-	</tr>
-	<tr>
-		<td><a name='equipment_type.description'>description</a></td>
-		<td> varchar&#040; 100 &#041;  NOT NULL  </td>
-		<td> Must be unique </td>
-	</tr>
-<tr><th colspan='3'><b>Indexes</b></th></tr>
-	<tr>		<td>pk&#095;equipment&#095;type primary key</td>
-		<td> ON equipment&#095;type&#095;id</td>
-		<td>  </td>
-	</tr>
-	<tr>		<td>idx&#095;equipment&#095;type unique</td>
-		<td> ON description</td>
-		<td>  </td>
-	</tr>
-</tbody>
-</table>
-
-<br/><br/>
-<table class='bordered'>
-<thead>
 <tr><th colspan='3'><a name='gdna_well'>Table gdna_well</a></th></tr>
 </thead>
 <tbody>
@@ -1468,7 +1246,7 @@ Again&#044; if only limited choices available&#044; could make a foreign key to 
 <tbody>
 	<tr>
 		<td><a name='equipment.equipment_id'>equipment&#095;id</a></td>
-		<td> integer  NOT NULL  </td>
+		<td> bigserial  NOT NULL  </td>
 		<td>  </td>
 	</tr>
 	<tr>
@@ -1512,7 +1290,7 @@ Again&#044; if only limited choices available&#044; could make a foreign key to 
 <tbody>
 	<tr>
 		<td><a name='reagent.reagent_id'>reagent&#095;id</a></td>
-		<td> integer  NOT NULL  </td>
+		<td> bigserial  NOT NULL  </td>
 		<td>  </td>
 	</tr>
 	<tr>
@@ -1543,6 +1321,228 @@ Again&#044; if only limited choices available&#044; could make a foreign key to 
 	<tr>
 		<td>fk_reagent_reagent_type</td>
 		<td > ( reagent&#095;type&#095;id ) ref <a href='#reagent&#095;type'>reagent&#095;type</a> (reagent&#095;type&#095;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<table class='bordered'>
+<thead>
+<tr><th colspan='3'><a name='equipment_type'>Table equipment_type</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td><a name='equipment_type.equipment_type_id'>equipment&#095;type&#095;id</a></td>
+		<td> bigserial  NOT NULL  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><a name='equipment_type.description'>description</a></td>
+		<td> varchar&#040; 100 &#041;  NOT NULL  </td>
+		<td> Must be unique </td>
+	</tr>
+<tr><th colspan='3'><b>Indexes</b></th></tr>
+	<tr>		<td>pk&#095;equipment&#095;type primary key</td>
+		<td> ON equipment&#095;type&#095;id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td>idx&#095;equipment&#095;type unique</td>
+		<td> ON description</td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<table class='bordered'>
+<thead>
+<tr><th colspan='3'><a name='gdna_plate'>Table gdna_plate</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td><a name='gdna_plate.gdna_plate_id'>gdna&#095;plate&#095;id</a></td>
+		<td> bigserial  NOT NULL  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><a name='gdna_plate.plate_id'>plate&#095;id</a></td>
+		<td> integer  NOT NULL  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><a name='gdna_plate.extraction_robot_id'>extraction&#095;robot&#095;id</a></td>
+		<td> integer   </td>
+		<td> Not null because gdna plate record will be created &#042;before&#042; extraction&#046;
+Enforce correct type of equipment id with trigger&#046; </td>
+	</tr>
+	<tr>
+		<td><a name='gdna_plate.extraction_kit_id'>extraction&#095;kit&#095;id</a></td>
+		<td> integer   </td>
+		<td> Not null because gdna plate record will be created &#042;before&#042; extraction&#046;
+Enforce correct type of reagent id with trigger&#046; </td>
+	</tr>
+	<tr>
+		<td><a name='gdna_plate.extraction_tool_id'>extraction&#095;tool&#095;id</a></td>
+		<td> integer   </td>
+		<td> Not null because gdna plate record will be created &#042;before&#042; extraction&#046;
+Enforce correct type of equipment id with trigger&#046; </td>
+	</tr>
+<tr><th colspan='3'><b>Indexes</b></th></tr>
+	<tr>		<td>pk&#095;dna&#095;plate primary key</td>
+		<td> ON gdna&#095;plate&#095;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='3'><b>Foreign Keys</b></th></tr>
+	<tr>
+		<td>fk_dna_plate_plate</td>
+		<td > ( plate&#095;id ) ref <a href='#plate'>plate</a> (plate&#095;id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>fk_dna_plate_equipment_robot</td>
+		<td > ( extraction&#095;robot&#095;id ) ref <a href='#equipment'>equipment</a> (equipment&#095;id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>fk_dna_plate_equipment_extraction_tool</td>
+		<td > ( extraction&#095;tool&#095;id ) ref <a href='#equipment'>equipment</a> (equipment&#095;id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>fk_dna_plate_reagent_extraction_kit</td>
+		<td > ( extraction&#095;kit&#095;id ) ref <a href='#reagent'>reagent</a> (reagent&#095;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<table class='bordered'>
+<thead>
+<tr><th colspan='3'><a name='plate'>Table plate</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td><a name='plate.plate_id'>plate&#095;id</a></td>
+		<td> bigserial  NOT NULL  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><a name='plate.external_identifier'>external&#095;identifier</a></td>
+		<td> varchar&#040; 250 &#041;  NOT NULL  </td>
+		<td> Must be unique </td>
+	</tr>
+	<tr>
+		<td><a name='plate.creator_id'>creator&#095;id</a></td>
+		<td> integer  NOT NULL  </td>
+		<td> This should probably be a foreign key to a user&#095;id somewhere else in the db </td>
+	</tr>
+	<tr>
+		<td><a name='plate.create_date'>create&#095;date</a></td>
+		<td> date  NOT NULL  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><a name='plate.plate_type_id'>plate&#095;type&#095;id</a></td>
+		<td> integer  NOT NULL  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><a name='plate.plate_configuration_id'>plate&#095;configuration&#095;id</a></td>
+		<td> integer  NOT NULL  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><a name='plate.notes'>notes</a></td>
+		<td> varchar&#040; 600 &#041;   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='3'><b>Indexes</b></th></tr>
+	<tr>		<td>pk&#095;plate primary key</td>
+		<td> ON plate&#095;id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td>idx&#095;plate unique</td>
+		<td> ON external&#095;identifier</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='3'><b>Foreign Keys</b></th></tr>
+	<tr>
+		<td>fk_plate_plate_type</td>
+		<td > ( plate&#095;type&#095;id ) ref <a href='#plate&#095;type'>plate&#095;type</a> (plate&#095;type&#095;id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>fk_plate_plate_configuration</td>
+		<td > ( plate&#095;configuration&#095;id ) ref <a href='#plate&#095;configuration'>plate&#095;configuration</a> (plate&#095;configuration&#095;id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<table class='bordered'>
+<thead>
+<tr><th colspan='3'><a name='plate_configuration'>Table plate_configuration</a></th></tr>
+<tr><td colspan='3'>I have named this &quot;plate configuration&quot; instead of &quot;plate size&quot; in case at some point we want to expand it to hold more than just a description &#040;for instance&#044; row letter range&#044; column number range&#044; deep&#045;well vs regular&#044; etc&#044; etc&#041;&#046; </td></tr>
+</thead>
+<tbody>
+	<tr>
+		<td><a name='plate_configuration.plate_configuration_id'>plate&#095;configuration&#095;id</a></td>
+		<td> bigserial  NOT NULL  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><a name='plate_configuration.description'>description</a></td>
+		<td> varchar&#040; 100 &#041;  NOT NULL  </td>
+		<td> Must be unique </td>
+	</tr>
+	<tr>
+		<td><a name='plate_configuration.num_rows'>num&#095;rows</a></td>
+		<td> integer  NOT NULL  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><a name='plate_configuration.num_columns'>num&#095;columns</a></td>
+		<td> integer  NOT NULL  </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='3'><b>Indexes</b></th></tr>
+	<tr>		<td>pk&#095;plate&#095;size primary key</td>
+		<td> ON plate&#095;configuration&#095;id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td>idx&#095;plate&#095;configuration unique</td>
+		<td> ON description</td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<table class='bordered'>
+<thead>
+<tr><th colspan='3'><a name='plate_type'>Table plate_type</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td><a name='plate_type.plate_type_id'>plate&#095;type&#095;id</a></td>
+		<td> bigserial  NOT NULL  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><a name='plate_type.description'>description</a></td>
+		<td> varchar&#040; 100 &#041;  NOT NULL  </td>
+		<td> Must be unique </td>
+	</tr>
+<tr><th colspan='3'><b>Indexes</b></th></tr>
+	<tr>		<td>pk&#095;plate&#095;type primary key</td>
+		<td> ON plate&#095;type&#095;id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td>idx&#095;plate&#095;type unique</td>
+		<td> ON description</td>
 		<td>  </td>
 	</tr>
 </tbody>

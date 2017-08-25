@@ -79,7 +79,7 @@
 			</fk>
 		</table>
 		<table name="equipment" >
-			<column name="equipment_id" type="integer" jt="4" mandatory="y" />
+			<column name="equipment_id" type="bigserial" jt="-5" mandatory="y" />
 			<column name="external_id" type="varchar" length="100" jt="12" mandatory="y" >
 				<comment><![CDATA[Must be unique]]></comment>
 			</column>
@@ -192,7 +192,7 @@ Again, if only limited choices available, could make a foreign key to a new type
 			</index>
 		</table>
 		<table name="plate" >
-			<column name="plate_id" type="integer" jt="4" mandatory="y" />
+			<column name="plate_id" type="bigserial" jt="-5" mandatory="y" />
 			<column name="external_identifier" type="varchar" length="250" jt="12" mandatory="y" >
 				<comment><![CDATA[Must be unique]]></comment>
 			</column>
@@ -301,7 +301,7 @@ Again, if only limited choices available, could make a foreign key to a new type
 			</fk>
 		</table>
 		<table name="reagent" >
-			<column name="reagent_id" type="integer" jt="4" mandatory="y" />
+			<column name="reagent_id" type="bigserial" jt="-5" mandatory="y" />
 			<column name="external_lot_id" type="varchar" length="100" jt="12" mandatory="y" >
 				<comment><![CDATA[Must be unique]]></comment>
 			</column>
@@ -364,11 +364,7 @@ Again, if only limited choices available, could make a foreign key to a new type
 	<layout id="Layout_120fae" name="Default Layout" >
 		<comment>Default Layout</comment>
 		<entity schema="qiita" name="reagent_type" color="c1d8ee" x="225" y="45" />
-		<entity schema="qiita" name="plate_type" color="c1d8ee" x="420" y="45" />
-		<entity schema="qiita" name="plate_configuration" color="c1d8ee" x="570" y="45" />
-		<entity schema="qiita" name="plate" color="c1d8ee" x="570" y="165" />
 		<entity schema="qiita" name="well" color="c1d8ee" x="915" y="150" />
-		<entity schema="qiita" name="gdna_plate" color="c1d8ee" x="570" y="345" />
 		<entity schema="qiita" name="gdna_content_type" color="c1d8ee" x="1155" y="345" />
 		<entity schema="qiita" name="primer_plate_template_well" color="c1d8ee" x="900" y="525" />
 		<entity schema="qiita" name="primer_plate_template" color="c1d8ee" x="555" y="525" />
@@ -379,9 +375,13 @@ Again, if only limited choices available, could make a foreign key to a new type
 		<entity schema="qiita" name="pool_type" color="c1d8ee" x="135" y="1035" />
 		<entity schema="qiita" name="pool" color="c1d8ee" x="450" y="1185" />
 		<entity schema="qiita" name="sequencing_pool_components" color="c1d8ee" x="90" y="1185" />
-		<entity schema="qiita" name="equipment_type" color="c1d8ee" x="60" y="45" />
 		<entity schema="qiita" name="gdna_well" color="c1d8ee" x="915" y="345" />
 		<entity schema="qiita" name="equipment" color="c1d8ee" x="45" y="255" />
 		<entity schema="qiita" name="reagent" color="c1d8ee" x="210" y="255" />
+		<entity schema="qiita" name="equipment_type" color="c1d8ee" x="60" y="45" />
+		<entity schema="qiita" name="gdna_plate" color="c1d8ee" x="570" y="345" />
+		<entity schema="qiita" name="plate" color="c1d8ee" x="570" y="165" />
+		<entity schema="qiita" name="plate_configuration" color="c1d8ee" x="570" y="45" />
+		<entity schema="qiita" name="plate_type" color="c1d8ee" x="420" y="45" />
 	</layout>
 </project>
