@@ -80,7 +80,7 @@
 		</table>
 		<table name="equipment" >
 			<column name="equipment_id" type="integer" jt="4" mandatory="y" />
-			<column name="external_id" type="integer" jt="4" mandatory="y" >
+			<column name="external_id" type="varchar" length="100" jt="12" mandatory="y" >
 				<comment><![CDATA[Must be unique]]></comment>
 			</column>
 			<column name="equipment_type_id" type="integer" jt="4" mandatory="y" />
@@ -302,7 +302,7 @@ Again, if only limited choices available, could make a foreign key to a new type
 		</table>
 		<table name="reagent" >
 			<column name="reagent_id" type="integer" jt="4" mandatory="y" />
-			<column name="external_lot_id" type="integer" jt="4" mandatory="y" >
+			<column name="external_lot_id" type="varchar" length="100" jt="12" mandatory="y" >
 				<comment><![CDATA[Must be unique]]></comment>
 			</column>
 			<column name="reagent_type_id" type="integer" jt="4" mandatory="y" />
@@ -366,8 +366,6 @@ Again, if only limited choices available, could make a foreign key to a new type
 		<entity schema="qiita" name="reagent_type" color="c1d8ee" x="225" y="45" />
 		<entity schema="qiita" name="plate_type" color="c1d8ee" x="420" y="45" />
 		<entity schema="qiita" name="plate_configuration" color="c1d8ee" x="570" y="45" />
-		<entity schema="qiita" name="equipment" color="c1d8ee" x="45" y="255" />
-		<entity schema="qiita" name="reagent" color="c1d8ee" x="210" y="255" />
 		<entity schema="qiita" name="plate" color="c1d8ee" x="570" y="165" />
 		<entity schema="qiita" name="well" color="c1d8ee" x="915" y="150" />
 		<entity schema="qiita" name="gdna_plate" color="c1d8ee" x="570" y="345" />
@@ -383,5 +381,7 @@ Again, if only limited choices available, could make a foreign key to a new type
 		<entity schema="qiita" name="sequencing_pool_components" color="c1d8ee" x="90" y="1185" />
 		<entity schema="qiita" name="equipment_type" color="c1d8ee" x="60" y="45" />
 		<entity schema="qiita" name="gdna_well" color="c1d8ee" x="915" y="345" />
+		<entity schema="qiita" name="equipment" color="c1d8ee" x="45" y="255" />
+		<entity schema="qiita" name="reagent" color="c1d8ee" x="210" y="255" />
 	</layout>
 </project>

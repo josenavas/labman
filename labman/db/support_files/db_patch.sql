@@ -81,7 +81,7 @@ COMMENT ON COLUMN qiita.reagent_type.description IS 'Must be unique';
 
 CREATE TABLE qiita.equipment (
 	equipment_id         integer  NOT NULL,
-	external_id          integer  NOT NULL,
+	external_id          varchar(100)  NOT NULL,
 	equipment_type_id    integer  NOT NULL,
 	notes                varchar(600)  ,
 	CONSTRAINT pk_equipment PRIMARY KEY ( equipment_id ),
@@ -130,7 +130,7 @@ COMMENT ON TABLE qiita.primer_plate_template IS 'I would prefer to call this a m
 
 CREATE TABLE qiita.reagent (
 	reagent_id           integer  NOT NULL,
-	external_lot_id      integer  NOT NULL,
+	external_lot_id      varchar(100)  NOT NULL,
 	reagent_type_id      integer  NOT NULL,
 	notes                varchar(600)  ,
 	CONSTRAINT pk_reagent PRIMARY KEY ( reagent_id ),
